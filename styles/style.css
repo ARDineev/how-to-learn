@@ -58,7 +58,7 @@
 
 .header__main-illustration {
   height: 608px;
-  width: 765px;  
+  width: 765px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -209,7 +209,7 @@
 
 .feynman__main-illustration {
   height: 637px;
-  width: 867px;  
+  width: 867px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -241,7 +241,7 @@
 
 .kaufman__triangle {
   height: 877px;
-  width: 877px;  
+  width: 877px;
   position: absolute;
   top: 0;
   right: -210px;
@@ -249,7 +249,7 @@
 
 .table_theme_dark {}
 
-.table__heading_theme_dark{}
+.table__heading_theme_dark {}
 
 .table__text_theme_dark {}
 
