@@ -3,6 +3,9 @@
   max-width: 1600px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -42,6 +45,7 @@
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   bottom: 30px;
@@ -54,6 +58,7 @@
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -63,6 +68,8 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  object-position: right bottom;
+  object-fit: contain;
 }
 
 .header__square-pic {
@@ -77,16 +84,16 @@
 .description {
   display: flex;
   justify-content: center;
-  padding: 100px 0 100px;
+  padding: 100px 0 0;
 }
 
-.two_columns {
+.two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-.two_columns__brief {
+.two-columns__brief {
   width: 175px;
   margin: 0;
   font-size: 18px;
@@ -95,7 +102,7 @@
   color: #2f80ed;
 }
 
-.two_columns__main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   font-size: 24px;
@@ -103,12 +110,16 @@
   font-weight: normal;  
 }
 
-.two_columns__paragraph {
+.two-columns__paragraph {
   margin: 0;
-  min-height: 30px;
+  padding-bottom: 30px;
 }
 
-.two_columns__span-accent {
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
+}
+
+.two-columns__span-accent {
   font-weight: 600;
 }
 
@@ -127,6 +138,7 @@
   line-height: 1.15;
   font-weight: 600;
   padding-bottom: 20px;
+  z-index: 1;
 }
 
 .section-subtitle {
@@ -167,7 +179,7 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   padding-top: 100px;
   position: relative;
   display: flex;
@@ -245,13 +257,11 @@
   position: absolute;
   top: 0;
   right: -210px;
-}
-
-.table_theme_dark {}
-
-.table__heading_theme_dark {}
-
-.table__text_theme_dark {}
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/kaufman-triangle.svg);
+  }
 
 .footer {
   min-height: 350px;
@@ -265,7 +275,6 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 .logo_place_footer {
@@ -274,6 +283,10 @@
 
 .footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer__author {
@@ -282,13 +295,8 @@
   line-height: 25px;
   font-weight: normal;
   padding: 18px 0 18px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   color: white;
 }
-
-.footer__column {}
 
 .footer__column-heading {
   margin: 0;
